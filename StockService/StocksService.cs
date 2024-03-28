@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 using StockServiceShared.Interfaces;
@@ -8,8 +9,8 @@ namespace StockService
 {
     public class StockService : IStockService
     {
-        private readonly Dictionary<string, List<IStockClient>> subscribers = new Dictionary<string, List<IStockClient>>();
-        private Dictionary<string, StockModel> currentPrices = new Dictionary<string, StockModel>();
+        private readonly IDictionary<string, List<IStockClient>> subscribers = new ConcurrentDictionary<string, List<IStockClient>>();
+        private IDictionary<string, StockModel> currentPrices = new ConcurrentDictionary<string, StockModel>();
         private Random random = new Random();
 
         public event EventHandler<PriceChangedEventArgs> PriceChanged;
@@ -22,31 +23,33 @@ namespace StockService
 
             PriceChanged += (sender, e) => { };
 
-            // Begin updating prices
-            Thread priceUpdateThread = new Thread(UpdatePrices);
-            priceUpdateThread.IsBackground = true;
-            priceUpdateThread.Start();
+            BeginUpdatingPrices();
         }
 
-        private void UpdatePrices()
+        private void BeginUpdatingPrices()
+        {
+            // Start the async price update method on a background thread
+            Task.Run(async () => await UpdatePricesAsync());
+        }
+
+        private async Task UpdatePricesAsync()
         {
             while (true)
             {
                 // Simulate price changes
-                foreach (var stock in currentPrices.Keys)
+                foreach (var stock in currentPrices.Keys.ToList()) // ToList to avoid collection modified exception
                 {
                     var stockModel = currentPrices[stock];
-                    double newPrice = GetNextPrice(stockModel.Price, stock);
-                    stockModel.UpdatePrice(newPrice);
+                    double newPrice = GetNextPrice(stockModel.Price, stock); // Assuming GetNextPrice can be async
+                    stockModel.UpdatePrice(newPrice); // Assuming UpdatePrice can be async
 
                     // Notify subscribers of the price change
-                    NotifySubscribers(stock, stockModel.PreviousPrice, newPrice);
+                    NotifySubscribers(stock, stockModel.PreviousPrice, newPrice); // Assuming NotifySubscribers can be async
                 }
 
-                Thread.Sleep(1000); // Simulate time delay between price updates
+                await Task.Delay(1000); // Asynchronously wait, freeing up the thread
             }
         }
-
         private double GetNextPrice(double currentPrice, string stock)
         {
             // Simulate price movement
