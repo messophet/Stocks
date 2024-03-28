@@ -50,6 +50,7 @@ namespace StockService
                 await Task.Delay(1000); // Asynchronously wait, freeing up the thread
             }
         }
+        
         private double GetNextPrice(double currentPrice, string stock)
         {
             // Simulate price movement
