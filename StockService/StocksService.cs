@@ -39,9 +39,10 @@ namespace StockService
                 // Simulate price changes
                 foreach (var stock in currentPrices.Keys.ToList()) // ToList to avoid collection modified exception
                 {
+                    // Should return a promise instead, and await on the client
                     var stockModel = currentPrices[stock];
-                    double newPrice = GetNextPrice(stockModel.Price, stock); // Assuming GetNextPrice can be async
-                    stockModel.UpdatePrice(newPrice); // Assuming UpdatePrice can be async
+                    double newPrice = GetNextPrice(stockModel.Price, stock);
+                    stockModel.UpdatePrice(newPrice); c
 
                     // Notify subscribers of the price change
                     NotifySubscribers(stock, stockModel.PreviousPrice, newPrice); // Assuming NotifySubscribers can be async
