@@ -1,0 +1,15 @@
+C:\Users\esu\source\repos\Stocks\StockService\bin\Debug\net8.0\StockService.deps.json
+C:\Users\esu\source\repos\Stocks\StockService\bin\Debug\net8.0\StockService.dll
+C:\Users\esu\source\repos\Stocks\StockService\bin\Debug\net8.0\StockService.pdb
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.AssemblyInfoInputs.cache
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.AssemblyInfo.cs
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.csproj.CoreCompileInputs.cache
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.dll
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\refint\StockService.dll
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.pdb
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\ref\StockService.dll
+C:\Users\esu\source\repos\Stocks\StockService\bin\Debug\net8.0\StockServiceShared.dll
+C:\Users\esu\source\repos\Stocks\StockService\bin\Debug\net8.0\StockServiceShared.pdb
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockService.csproj.AssemblyReference.cache
+C:\Users\esu\source\repos\Stocks\StockService\obj\Debug\net8.0\StockSer.34CAD7D1.Up2Date

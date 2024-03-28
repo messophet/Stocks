@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StockService/1.0.0": {
+        "dependencies": {
+          "StockServiceShared": "1.0.0"
+        },
+        "runtime": {
+          "StockService.dll": {}
+        }
+      },
+      "StockServiceShared/1.0.0": {
+        "runtime": {
+          "StockServiceShared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StockService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockServiceShared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

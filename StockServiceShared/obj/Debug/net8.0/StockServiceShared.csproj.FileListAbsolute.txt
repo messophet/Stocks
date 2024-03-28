@@ -1,0 +1,11 @@
+C:\Users\esu\source\repos\Stocks\StockServiceShared\bin\Debug\net8.0\StockServiceShared.deps.json
+C:\Users\esu\source\repos\Stocks\StockServiceShared\bin\Debug\net8.0\StockServiceShared.dll
+C:\Users\esu\source\repos\Stocks\StockServiceShared\bin\Debug\net8.0\StockServiceShared.pdb
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.AssemblyInfoInputs.cache
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.AssemblyInfo.cs
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.csproj.CoreCompileInputs.cache
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.dll
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\refint\StockServiceShared.dll
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\StockServiceShared.pdb
+C:\Users\esu\source\repos\Stocks\StockServiceShared\obj\Debug\net8.0\ref\StockServiceShared.dll

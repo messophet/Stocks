@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StocksWPF/1.0.0": {
+        "dependencies": {
+          "StockService": "1.0.0",
+          "StockServiceShared": "1.0.0"
+        },
+        "runtime": {
+          "StocksWPF.dll": {}
+        }
+      },
+      "StockService/1.0.0": {
+        "dependencies": {
+          "StockServiceShared": "1.0.0"
+        },
+        "runtime": {
+          "StockService.dll": {}
+        }
+      },
+      "StockServiceShared/1.0.0": {
+        "runtime": {
+          "StockServiceShared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StocksWPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockServiceShared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
